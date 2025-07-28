@@ -317,9 +317,6 @@ header:hover{
   #navbar header{
     display: none;
   }
-  #INTRODUCTION{
-    height: 20vh;
-  }
   .main-section{
     justify-content: flex-start;
     margin:0;
@@ -347,14 +344,14 @@ header:hover{
     margin-top: 3vw;
   }
   .main-section p{
-    font-size: 2vw;
+    font-size: 3vw;
   }
   .main-section ul li{
-    font-size: 2vw;
+    font-size: 3vw;
     box-sizing: border-box;
   }
   .main-section header {
-    font-size: 3vw;
+    font-size: 4vw;
   }
   #second section{
     height: 100%;
