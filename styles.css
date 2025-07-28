@@ -334,14 +334,14 @@ header:hover{
   .main-section header{
     font-size: 3vw;
   }
-  .cards {
+   .cards {
     flex-wrap: wrap;
     gap: 3vw;
     width: 100vw;
     padding-bottom: 5vw;
   }
   .card {
-    width: 4vw;
+    width: 40vw;
     height: 28vw;
     margin-top: 3vw;
   }
