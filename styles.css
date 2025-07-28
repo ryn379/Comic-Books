@@ -327,7 +327,7 @@ header:hover{
     padding: 2vw;
     margin-bottom: 5vw;
     margin-right: 0;
-    height: 100%;
+    height: auto;
   }
   .main-section p{
     font-size: 2vw;
