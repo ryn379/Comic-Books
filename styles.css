@@ -363,4 +363,7 @@ header:hover{
   #second section{
     height: 40vh;
   }
+  #second{
+    width:100vw;
+  }
 }
