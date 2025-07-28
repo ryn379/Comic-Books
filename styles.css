@@ -342,6 +342,13 @@ header:hover{
     width: 40vw;
     height: 28vw;
     margin-top: 3vw;
+    padding:1vw;
+  }
+  .card h4{
+    font-size: 3vw;
+  }
+  .card p{
+    font-size: 1.5vw;
   }
   .main-section p{
     font-size: 3vw;
