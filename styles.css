@@ -182,9 +182,13 @@ header:hover{
 }
 #second{
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 3px solid white;
+    box-shadow: 1px 1px 1px 1px black;
+    width:68vw;
+    
 }
 #second section{
     height: 80vh;
@@ -280,4 +284,83 @@ header:hover{
 #wolverine-card .front{
     background-color: #0A2342;
     color: white;
+}
+@media (max-width: 1024px) {
+    body{
+        background-color: #fdf6e3;
+    }
+  #navbar{
+    position: relative;
+    top: 0;
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #main-doc{
+    margin-right: 20vw;
+  }
+  #navbar a {
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1.5vw;
+    text-align: center;
+    gap:auto;
+  }
+  .main-section code {
+    font-size: 2vw;
+  }
+  #comic-book{
+    display: none;
+  }
+  #navbar header{
+    display: none;
+  }
+  #INTRODUCTION{
+    height: 20vh;
+  }
+  .main-section{
+    justify-content: flex-start;
+    width: 77vw;
+    margin:0;
+    padding: 0;
+    margin-right: 15vw;
+
+  }
+  .main-section p{
+    font-size: 2vw;
+  }
+  .main-section header{
+    font-size: 3vw;
+  }
+  .cards {
+    flex-wrap: wrap;
+    gap: 3vw;
+    width: 100vw;
+    padding-bottom: 5vw;
+  }
+  .card {
+    width: 4vw;
+    height: 28vw;
+    margin-top: 3vw;
+  }
+  .main-section {
+    width: 90vw;
+    margin: 0;
+    padding: 2vw;
+    margin-bottom: 5vw;
+    margin-right: 0;
+  }
+  .main-section p,
+  .main-section ul li {
+    font-size: 2vw;
+    padding: 2vw;
+  }
+  .main-section header {
+    font-size: 3vw;
+  }
+  #second section{
+    height: 40vh;
+  }
 }
