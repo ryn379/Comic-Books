@@ -1,0 +1,283 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding:0 ;
+    font-family: "Comic Relief", system-ui;
+    text-shadow: 1px 1px 1px white;
+}
+#comic-book img{
+    transition: all 1s ease-in-out;
+}
+#comic-book img:hover{
+    transform: scale(1.65);
+    transform-origin: left;
+}
+code{
+    transition: all 1s ease-in-out;
+
+}
+code:hover{
+    color: rgb(30, 169, 58);
+    transform: scale(1.2);
+}
+header{
+    transition: all 1s ease-in-out;
+}
+p,li{
+    transition: all 1s ease-in-out;
+}
+p:hover,li:hover{
+    transform: scale(1.15);
+    color: rgb(120, 3, 3);
+    transform-origin: left;
+}
+header:hover{
+    transform: scale(1.2);
+    color: rgb(42, 209, 209);
+}
+#main-doc{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 20vw;
+    padding-top: 4vw;
+    background-color: #fdf6e3;
+}
+#navbar {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 15.5vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    background-color: #a3ffff;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(47, 43, 43);
+    box-shadow: 1px 1px 1px black;
+}
+
+#navbar header{
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 1vw;
+    font-family: "Delius Swash Caps", cursive;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+#navbar #spiderman{
+    color:red;
+}
+#navbar #batman{
+    color:black;
+}
+#navbar #superman{
+    color:rgb(0, 170, 255);
+}
+#navbar #doom{
+    color:green;
+}
+#navbar #joker{
+    color:purple;
+}
+#nav-image{
+    width: 5vw;
+    height: 5vw;
+}
+#navbar a:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    color: rgba(0, 0, 0, 0.529);
+}
+#comic-book{
+    position: absolute;
+    height: 100%;
+    left:0;
+    top:100vh;
+    margin-left: 0.5vw;
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    align-items: flex-start;
+}
+#comic1 {
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comics img{
+    height:15vw;
+    width:15vw;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px white;
+}
+.comics{
+    display: flex;
+    flex-direction: column;
+    gap:1vw;
+}
+#comic2 {
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#comic2 img{
+    width:100%;
+    height:25vw;
+}
+#comic3 {
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid white;
+    box-shadow: 1px 1px 1px 1px black;
+    width:68vw;
+}
+.main-section header{
+    font-size: 1.5vw;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    z-index: 1;
+}
+.main-section p{
+    font-size: 1.2vw;
+    padding:1vw;
+    line-height: 1.8;
+}
+.main-section code{
+    font-size: 1vw;
+    padding:1vw;
+    margin: 1vw;
+    background-color: #f8ecc7;
+}
+.main-section ul{
+    margin-top: 1vw;
+    margin-left: 2vw;
+}
+.main-section ul li{
+    font-size: 1.3vw;
+    padding: 1vw;
+}
+#second{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+#second section{
+    height: 80vh;
+}
+.cards{
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap:5vw;
+    background-color: #fdf6e3;
+    padding-bottom: 10vw;
+    margin-right: 1rem;
+}
+.card p{
+    font-size: 1.2vw;
+    margin: 1.5vw;
+}
+.card {
+    position: relative;
+    margin-top: 5vw;
+    width: 20vw;
+    height: 24vw;
+    border: 2px solid black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease-in-out;
+    transform-style: preserve-3d;
+}
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+.front, .back {
+    position: absolute;
+    width: 20vw;
+    height: 24vw;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    color: #333;
+}
+.back {
+    transform: rotateY(180deg);
+}
+.card img{
+    width:10vw;
+    height:10vw;
+    margin: 1vw;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+#spiderman-card {
+    box-shadow: 20px 20px rgb(53, 142, 201);
+}
+#spiderman-card .front{
+    background-color: #e60000;
+    color: #ffffff;
+}
+#spiderman-card .back{
+    color: black;
+}
+
+#batman-card{
+    box-shadow: 20px 20px black;
+}
+#batman-card .front{
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+#superman-card{
+    box-shadow: 20px 20px rgb(231, 59, 59);
+}
+#superman-card .front{
+    background-color: rgb(79, 211, 255);
+    color: white;
+}
+
+#wolverine-card{
+    box-shadow: 20px 20px yellow;
+}
+#wolverine-card .front{
+    background-color: #0A2342;
+    color: white;
+}
